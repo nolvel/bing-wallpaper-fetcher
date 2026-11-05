@@ -6,6 +6,9 @@ on:
       timezone: Asia/Shanghai
     - cron: '6 0 * * *'
       timezone: America/Los_Angeles
+    # Temporary en-US run on November 5; remove after verification.
+    - cron: '22 20 * * *'
+      timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
       target_environment:
