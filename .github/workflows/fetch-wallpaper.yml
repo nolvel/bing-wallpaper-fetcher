@@ -2,9 +2,9 @@ name: Fetch daily wallpaper
 
 on:
   schedule:
-    - cron: '7 0 * * *'
+    - cron: '5 0 * * *'
       timezone: Asia/Shanghai
-    - cron: '12 0 * * *'
+    - cron: '6 0 * * *'
       timezone: America/Los_Angeles
   workflow_dispatch:
     inputs:
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      MARKET: ${{ github.event_name == 'workflow_dispatch' && inputs.market || (github.event.schedule == '7 0 * * *' && 'zh-CN' || 'en-US') }}
+      MARKET: ${{ github.event_name == 'workflow_dispatch' && inputs.market || (github.event.schedule == '5 0 * * *' && 'zh-CN' || 'en-US') }}
     steps:
       - name: Check out latest default branch
         uses: actions/checkout@v6
