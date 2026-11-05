@@ -54,6 +54,27 @@ async function fetchWallpaper() {
   };
 }
 
+async function validateImageUrls(wallpaper) {
+  for (const field of ['previewUrl', 'fullHdUrl', 'uhdUrl']) {
+    const response = await fetch(wallpaper[field], {
+      signal: AbortSignal.timeout(10_000),
+    });
+    const contentType = response.headers.get('content-type') ?? '';
+    if (response.status !== 200 || !contentType.startsWith('image/')) {
+      await response.body?.cancel();
+      throw new Error(
+        `${field} returned HTTP ${response.status}, Content-Type ${contentType}`,
+      );
+    }
+
+    const image = await response.arrayBuffer();
+    if (image.byteLength === 0) {
+      throw new Error(`${field} returned an empty image`);
+    }
+    console.log(`${field} validated: ${image.byteLength} bytes`);
+  }
+}
+
 async function readFeed() {
   try {
     const feed = JSON.parse(await readFile(output, 'utf8'));
@@ -83,6 +104,7 @@ async function updateFeed() {
       return;
     }
 
+    await validateImageUrls(wallpaper);
     feed.wallpapers[market] = wallpaper;
     await writeFile(temporary, `${JSON.stringify(feed, null, 2)}\n`);
     await rename(temporary, output);
