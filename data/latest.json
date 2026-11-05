@@ -12,6 +12,18 @@
       "fullHdUrl": "https://www.bing.com/th?id=OHR.StileCrossing_ZH-CN9811465935_1920x1080.jpg",
       "uhdUrl": "https://www.bing.com/th?id=OHR.StileCrossing_ZH-CN9811465935_UHD.jpg",
       "linkUrl": "https://www.bing.com/search?q=%e8%8b%b1%e6%a0%bc%e5%85%b0%e6%b9%96%e5%8c%ba&form=hpcapt&filters=HpDate:%2220261104_1600%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
+    },
+    "en-US": {
+      "id": "OHR.AutumnChina_EN-US0467722422",
+      "fetchedAt": "2026-11-05T05:20:22.188Z",
+      "title": "Paddling a painted forest",
+      "description": "People rowing among colorful bald cypress, Xuancheng, Anhui, China",
+      "copyright": "© Jackal Pan/Getty Images",
+      "source": "Bing",
+      "previewUrl": "https://www.bing.com/th?id=OHR.AutumnChina_EN-US0467722422_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.AutumnChina_EN-US0467722422_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.AutumnChina_EN-US0467722422_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=bald+cypress&form=hpcapt&filters=HpDate:%2220261104_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
     }
   }
 }
