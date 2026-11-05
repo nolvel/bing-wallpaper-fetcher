@@ -2,12 +2,7 @@ name: Fetch daily wallpaper
 
 on:
   schedule:
-    - cron: '5 0 * * *'
-      timezone: Asia/Shanghai
-    - cron: '6 0 * * *'
-      timezone: America/Los_Angeles
-    # Temporary en-US run every 5 minutes; remove after verification.
-    - cron: '*/5 * * * *'
+    - cron: '3 * * * *'
       timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
@@ -49,7 +44,7 @@ jobs:
     outputs:
       feed_commit: ${{ steps.feed_commit.outputs.sha }}
     env:
-      MARKET: ${{ github.event_name == 'workflow_dispatch' && inputs.market || (github.event.schedule == '5 0 * * *' && 'zh-CN' || 'en-US') }}
+      MARKETS: ${{ github.event_name == 'workflow_dispatch' && inputs.market || 'zh-CN en-US' }}
     steps:
       - name: Check out latest default branch
         uses: actions/checkout@v6
@@ -65,11 +60,14 @@ jobs:
         env:
           FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
         run: |
-          args=("$MARKET")
-          if [ "$FORCE" = "true" ]; then
-            args+=(--force)
-          fi
-          node scripts/fetch-wallpaper.mjs "${args[@]}"
+          read -r -a markets <<< "$MARKETS"
+          for market in "${markets[@]}"; do
+            args=("$market")
+            if [ "$FORCE" = "true" ]; then
+              args+=(--force)
+            fi
+            node scripts/fetch-wallpaper.mjs "${args[@]}"
+          done
 
       - name: Commit updated feed
         env:
@@ -82,7 +80,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update ${MARKET} wallpaper"
+          git commit -m "Update ${MARKETS} wallpaper"
           git push origin "HEAD:${DEFAULT_BRANCH}"
 
       - name: Record feed commit
