@@ -40,6 +40,12 @@ async function fetchWallpaper() {
     throw new Error('Bing response is missing wallpaper text');
   }
 
+  const rawLink = content.BackstageUrl;
+  const link = typeof rawLink === 'string' && rawLink.trim() &&
+    URL.canParse(rawLink, bingOrigin) ? new URL(rawLink, bingOrigin) : null;
+  const linkUrl = link && ['https:', 'http:'].includes(link.protocol)
+    ? link.href : null;
+
   return {
     id,
     fetchedAt: new Date().toISOString(),
@@ -50,7 +56,7 @@ async function fetchWallpaper() {
     previewUrl: `${bingOrigin}/th?id=${id}_640x360.jpg`,
     fullHdUrl: `${bingOrigin}/th?id=${id}_1920x1080.jpg`,
     uhdUrl: `${bingOrigin}/th?id=${id}_UHD.jpg`,
-    linkUrl: null,
+    linkUrl,
   };
 }
 

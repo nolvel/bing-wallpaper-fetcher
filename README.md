@@ -42,4 +42,4 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 - `id` 是图片标识，可用于判断壁纸是否更新。
 - `fetchedAt` 是该条记录首次采集成功时的 UTC 时间，采用 ISO 8601 格式。
 - `previewUrl` 对应 640×360 预览，`fullHdUrl` 对应 1920×1080 背景，`uhdUrl` 用于高分屏。UHD 加载失败时可回退到 Full HD。
-- `linkUrl` 是可选的详情页地址。当前采集器返回 `null`。
+- `linkUrl` 取自 Bing 的 `BackstageUrl`，指向壁纸主题的搜索页面。相对路径会转成完整 URL，缺失或无效时返回 `null`。
