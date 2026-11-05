@@ -1,0 +1,24 @@
+# Temporary scheduler diagnostic; remove after verification.
+name: Schedule diagnostic
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Print trigger information
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          REF: ${{ github.ref }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          date -u '+UTC time: %Y-%m-%dT%H:%M:%SZ'
+          printf 'Event: %s\nSchedule: %s\nRef: %s\nCommit: %s\n' "$EVENT_NAME" "$SCHEDULE" "$REF" "$COMMIT_SHA"
