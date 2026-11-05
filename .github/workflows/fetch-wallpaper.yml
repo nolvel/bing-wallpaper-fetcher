@@ -17,6 +17,11 @@ on:
           - zh-CN
           - en-US
 
+      force:
+        description: Force refresh even when the image ID is unchanged
+        type: boolean
+        default: false
+
 permissions:
   contents: write
 
@@ -43,7 +48,14 @@ jobs:
           node-version: '24'
 
       - name: Fetch wallpaper
-        run: node scripts/fetch-wallpaper.mjs "$MARKET"
+        env:
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
+        run: |
+          args=("$MARKET")
+          if [ "$FORCE" = "true" ]; then
+            args+=(--force)
+          fi
+          node scripts/fetch-wallpaper.mjs "${args[@]}"
 
       - name: Commit updated feed
         env:

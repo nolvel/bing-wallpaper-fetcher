@@ -5,6 +5,7 @@ const markets = new Map([
   ['en-US', { language: 'en', country: 'US' }],
 ]);
 const market = process.argv[2];
+const force = process.argv[3] === '--force';
 const settings = markets.get(market);
 const bingOrigin = 'https://www.bing.com';
 const dataDirectory = new URL('../data/', import.meta.url);
@@ -110,8 +111,8 @@ async function readFeed() {
 }
 
 async function updateFeed() {
-  if (!settings) {
-    throw new Error('Usage: node scripts/fetch-wallpaper.mjs <zh-CN|en-US>');
+  if (!settings || process.argv.length > 4 || (process.argv[3] && !force)) {
+    throw new Error('Usage: node scripts/fetch-wallpaper.mjs <zh-CN|en-US> [--force]');
   }
 
   await mkdir(dataDirectory, { recursive: true });
@@ -119,7 +120,7 @@ async function updateFeed() {
   try {
     const wallpaper = await fetchWallpaper();
     const feed = await readFeed();
-    if (feed.wallpapers[market]?.id === wallpaper.id) {
+    if (!force && feed.wallpapers[market]?.id === wallpaper.id) {
       console.log(`${market} unchanged: ${wallpaper.id}`);
       return;
     }

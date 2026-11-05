@@ -13,6 +13,13 @@ node scripts/fetch-wallpaper.mjs en-US
 
 脚本通过 Bing 的 `HPImageArchive.aspx` 获取元数据，每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场抓到相同的图片 ID 时，保留原记录和抓取时间。
 
+添加 `--force` 可强制重新采集指定市场，即使图片 ID 相同也会重新验证三个图片地址并替换整条记录，刷新 `fetchedAt`。验证失败时保留已有数据。
+
+```bash
+node scripts/fetch-wallpaper.mjs zh-CN --force
+node scripts/fetch-wallpaper.mjs en-US --force
+```
+
 Bing 的市场返回结果可能随网络出口而变化。部署前请在实际运行采集任务的机器上验证 `en-US` 能返回英文记录。
 
 ## 读取数据
@@ -42,7 +49,7 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 
 - `id` 是图片标识，可用于判断壁纸是否更新。
 - `publishedAt` 是对应市场的壁纸起始展示时间，将 `fullstartdate` 按 UTC 解读并转换为 ISO 8601 格式。
-- `fetchedAt` 是该条记录首次采集成功时的 UTC 时间，采用 ISO 8601 格式。
+- `fetchedAt` 是该条记录最近一次成功采集并写入时的 UTC 时间，采用 ISO 8601 格式。
 - `previewUrl` 对应 640×360 预览，`fullHdUrl` 对应 1920×1080 背景，`uhdUrl` 用于高分屏。UHD 加载失败时可回退到 Full HD。
 - `linkUrl` 取自 Bing 的 `copyrightlink`，指向壁纸主题的搜索页面。相对路径会转成完整 URL，缺失或无效时返回 `null`。
 
@@ -57,6 +64,6 @@ GitHub Actions 工作流 `Fetch daily wallpaper` 使用 GitHub 托管的 `ubuntu
 
 定时任务从默认分支运行，实际触发时间可能因 GitHub Actions 排队而延迟。两个市场的任务串行执行，每次基于默认分支最新版本更新数据。采集和图片验证成功后，只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。采集失败会使任务失败，已有仓库数据保留。
 
-首次发布时，将 workflow 推送到默认分支，然后在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON。
+首次发布时，将 workflow 推送到默认分支，然后在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行默认按图片 ID 去重。
 
 工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。公开仓库连续 60 天没有活动时，GitHub 可能禁用定时工作流，可在 Actions 页面重新启用。
