@@ -64,9 +64,29 @@ GitHub Actions 工作流 `Fetch daily wallpaper` 使用 GitHub 托管的 `ubuntu
 
 定时任务从默认分支运行，实际触发时间可能因 GitHub Actions 排队而延迟。两个市场的任务串行执行，每次基于默认分支最新版本更新数据。采集和图片验证成功后，只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。采集失败会使任务失败，已有仓库数据保留。
 
-首次发布时，将 workflow 推送到默认分支，然后在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行默认按图片 ID 去重。
+首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行默认按图片 ID 去重。
 
 工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。公开仓库连续 60 天没有活动时，GitHub 可能禁用定时工作流，可在 Actions 页面重新启用。
+
+## GitHub Actions 推送环境
+
+在仓库 **Settings → Environments** 中创建 `test`（测试）和 `production`（生产）。在每个环境的 **Environment secrets** 中分别配置：
+
+| Secret | 内容 |
+| --- | --- |
+| `WALLPAPER_PUSH_URL` | 对应环境的完整 HTTPS 接口地址 |
+| `WALLPAPER_APP_ID` | 对应环境的 appid |
+| `WALLPAPER_APP_SECRET` | 对应环境的 secret |
+
+在每个环境的 **Environment variables** 中添加 `SCHEDULE_PUSH_ENABLED`，只有值为 `true` 时才启用该环境的定时推送；设为 `false` 或不配置均为关闭。开关修改不需要改动 YAML，也不影响另一个环境。
+
+- 定时运行：采集并提交成功后，分别检查 `test` 和 `production` 的开关，只向已启用的环境推送。
+- 手动运行：`target_environment` 可选 `test` 或 `production`，默认 `test`。采集成功后只向所选环境推送，不受定时开关影响。
+- 两个环境都关闭定时推送时，仍按计划采集并更新仓库数据。
+
+采集 job 成功后，通过 matrix 创建各环境的独立推送 job。各 job 使用对应环境的 Secrets，并检出采集 job 输出的准确 commit，保证同一次运行使用相同数据。数据没有变化时仍按上述规则推送。任一环境推送失败不会取消另一个环境的任务，但会使整次 workflow 显示失败。
+
+定时开关在推送 job 启动后的步骤中读取；关闭时该 job 仍会出现，跳过检出、Node.js 设置和实际推送。环境配置的审批和分支限制仍然生效。整个 workflow 保持串行执行，避免同一环境交错推送新旧数据。
 
 ## 本地推送到测试环境
 

@@ -8,6 +8,15 @@ on:
       timezone: America/Los_Angeles
   workflow_dispatch:
     inputs:
+      target_environment:
+        description: Push target environment
+        required: true
+        default: test
+        type: choice
+        options:
+          - test
+          - production
+
       market:
         description: Bing market
         required: true
@@ -34,6 +43,8 @@ jobs:
     if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    outputs:
+      feed_commit: ${{ steps.feed_commit.outputs.sha }}
     env:
       MARKET: ${{ github.event_name == 'workflow_dispatch' && inputs.market || (github.event.schedule == '5 0 * * *' && 'zh-CN' || 'en-US') }}
     steps:
@@ -70,3 +81,55 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update ${MARKET} wallpaper"
           git push origin "HEAD:${DEFAULT_BRANCH}"
+
+      - name: Record feed commit
+        id: feed_commit
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  push:
+    name: Push to ${{ matrix.environment }}
+    needs: fetch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        environment: ${{ fromJSON(github.event_name == 'schedule' && '["test", "production"]' || format('["{0}"]', inputs.target_environment)) }}
+    environment:
+      name: ${{ matrix.environment }}
+    steps:
+      # Environment variables are available after the job starts.
+      - name: Check push switch
+        id: push_switch
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE_PUSH_ENABLED: ${{ vars.SCHEDULE_PUSH_ENABLED }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$SCHEDULE_PUSH_ENABLED" = "true" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Scheduled push disabled for this environment"
+          fi
+
+      - name: Check out collected feed
+        if: steps.push_switch.outputs.enabled == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.fetch.outputs.feed_commit }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        if: steps.push_switch.outputs.enabled == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Push wallpaper
+        if: steps.push_switch.outputs.enabled == 'true'
+        env:
+          WALLPAPER_PUSH_URL: ${{ secrets.WALLPAPER_PUSH_URL }}
+          WALLPAPER_APP_ID: ${{ secrets.WALLPAPER_APP_ID }}
+          WALLPAPER_APP_SECRET: ${{ secrets.WALLPAPER_APP_SECRET }}
+        run: node scripts/push-wallpaper.mjs
