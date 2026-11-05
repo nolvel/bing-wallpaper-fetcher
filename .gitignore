@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+coverage/
+*.log
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary files used by the fetcher
+/data/.latest.lock/
