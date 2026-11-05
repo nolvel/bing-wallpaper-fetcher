@@ -1,0 +1,60 @@
+name: Fetch daily wallpaper
+
+on:
+  schedule:
+    - cron: '7 0 * * *'
+      timezone: Asia/Shanghai
+    - cron: '12 0 * * *'
+      timezone: America/Los_Angeles
+  workflow_dispatch:
+    inputs:
+      market:
+        description: Bing market
+        required: true
+        default: en-US
+        type: choice
+        options:
+          - zh-CN
+          - en-US
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wallpaper-feed
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MARKET: ${{ github.event_name == 'workflow_dispatch' && inputs.market || (github.event.schedule == '7 0 * * *' && 'zh-CN' || 'en-US') }}
+    steps:
+      - name: Check out latest default branch
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Fetch wallpaper
+        run: node scripts/fetch-wallpaper.mjs "$MARKET"
+
+      - name: Commit updated feed
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "Wallpaper feed unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update ${MARKET} wallpaper"
+          git push origin "HEAD:${DEFAULT_BRANCH}"
