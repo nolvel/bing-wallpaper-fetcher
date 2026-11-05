@@ -11,7 +11,7 @@ node scripts/fetch-wallpaper.mjs zh-CN
 node scripts/fetch-wallpaper.mjs en-US
 ```
 
-每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场抓到相同的图片 ID 时，保留原记录和抓取时间。
+脚本通过 Bing 的 `HPImageArchive.aspx` 获取元数据，每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场抓到相同的图片 ID 时，保留原记录和抓取时间。
 
 Bing 的市场返回结果可能随网络出口而变化。部署前请在实际运行采集任务的机器上验证 `en-US` 能返回英文记录。
 
@@ -25,6 +25,7 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
   "wallpapers": {
     "en-US": {
       "id": "OHR.AutumnChina_EN-US0467722422",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
       "fetchedAt": "2026-11-05T04:33:39.483Z",
       "title": "Paddling a painted forest",
       "description": "People rowing among colorful bald cypress, Xuancheng, Anhui, China",
@@ -40,9 +41,10 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 ```
 
 - `id` 是图片标识，可用于判断壁纸是否更新。
+- `publishedAt` 是对应市场的壁纸起始展示时间，将 `fullstartdate` 按 UTC 解读并转换为 ISO 8601 格式。
 - `fetchedAt` 是该条记录首次采集成功时的 UTC 时间，采用 ISO 8601 格式。
 - `previewUrl` 对应 640×360 预览，`fullHdUrl` 对应 1920×1080 背景，`uhdUrl` 用于高分屏。UHD 加载失败时可回退到 Full HD。
-- `linkUrl` 取自 Bing 的 `BackstageUrl`，指向壁纸主题的搜索页面。相对路径会转成完整 URL，缺失或无效时返回 `null`。
+- `linkUrl` 取自 Bing 的 `copyrightlink`，指向壁纸主题的搜索页面。相对路径会转成完整 URL，缺失或无效时返回 `null`。
 
 ## 自动采集
 

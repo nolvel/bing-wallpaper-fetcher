@@ -13,8 +13,11 @@ const lock = new URL('.latest.lock/', dataDirectory);
 const temporary = new URL('latest.json.tmp', lock);
 
 async function fetchWallpaper() {
-  const url = new URL('/hp/api/model', bingOrigin);
+  const url = new URL('/HPImageArchive.aspx', bingOrigin);
   url.search = new URLSearchParams({
+    format: 'js',
+    idx: '0',
+    n: '1',
     mkt: market,
     setlang: settings.language,
     cc: settings.country,
@@ -24,8 +27,8 @@ async function fetchWallpaper() {
   if (!response.ok) throw new Error(`Bing returned HTTP ${response.status}`);
 
   const payload = await response.json();
-  const content = payload.MediaContents?.[0]?.ImageContent;
-  const image = new URL(content?.Image?.Url ?? '/', bingOrigin);
+  const content = payload.images?.[0];
+  const image = new URL(content?.url ?? '/', bingOrigin);
   const imageKey = image.searchParams.get('id') ?? '';
   const match = imageKey.match(/^(OHR\.[\w.-]+_(?<market>[A-Z]{2}-[A-Z]{2})\d+)_(?:\d+x\d+|UHD)\.[a-z]+$/i);
   if (match?.groups.market.toLowerCase() !== market.toLowerCase()) {
@@ -33,14 +36,24 @@ async function fetchWallpaper() {
   }
 
   const id = match[1];
-  const title = content.Headline?.trim();
-  const description = content.Title?.trim();
-  const copyright = content.Copyright?.trim();
+  const title = content.title?.trim();
+  const credit = content.copyright?.trim().match(/^(.*?)\s+\((©.+)\)$/);
+  const description = credit?.[1].trim();
+  const copyright = credit?.[2].trim();
   if (!title || !description || !copyright) {
     throw new Error('Bing response is missing wallpaper text');
   }
 
-  const rawLink = content.BackstageUrl;
+  const start = content.fullstartdate?.match(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})$/);
+  if (!start) throw new Error('Bing response has an invalid fullstartdate');
+  const [, year, month, day, hour, minute] = start;
+  const publishedAt = `${year}-${month}-${day}T${hour}:${minute}:00.000Z`;
+  const timestamp = Date.parse(publishedAt);
+  if (!Number.isFinite(timestamp) || new Date(timestamp).toISOString() !== publishedAt) {
+    throw new Error('Bing response has an invalid fullstartdate');
+  }
+
+  const rawLink = content.copyrightlink;
   const link = typeof rawLink === 'string' && rawLink.trim() &&
     URL.canParse(rawLink, bingOrigin) ? new URL(rawLink, bingOrigin) : null;
   const linkUrl = link && ['https:', 'http:'].includes(link.protocol)
@@ -48,6 +61,7 @@ async function fetchWallpaper() {
 
   return {
     id,
+    publishedAt,
     fetchedAt: new Date().toISOString(),
     title,
     description,
