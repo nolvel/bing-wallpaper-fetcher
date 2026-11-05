@@ -1,8 +1,8 @@
 import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 
 const markets = new Map([
-  ['zh-CN', { language: 'zh', country: 'CN' }],
-  ['en-US', { language: 'en', country: 'US' }],
+  ['zh-CN', { language: 'zh', country: 'CN', timeZone: 'Asia/Shanghai' }],
+  ['en-US', { language: 'en', country: 'US', timeZone: 'America/Los_Angeles' }],
 ]);
 const market = process.argv[2];
 const force = process.argv[3] === '--force';
@@ -13,12 +13,41 @@ const output = new URL('latest.json', dataDirectory);
 const lock = new URL('.latest.lock/', dataDirectory);
 const temporary = new URL('latest.json.tmp', lock);
 
+function getPublishedAt(ssd, timeZone) {
+  const date = typeof ssd === 'string' && ssd.match(/^(\d{4})(\d{2})(\d{2})$/);
+  if (!date) throw new Error('Bing response has an invalid Ssd');
+
+  const [, year, month, day] = date;
+  const midnight = `${year}-${month}-${day}T00:00:00.000Z`;
+  const target = Date.parse(midnight);
+  if (!Number.isFinite(target) || new Date(target).toISOString() !== midnight) {
+    throw new Error('Bing response has an invalid Ssd');
+  }
+
+  const formatter = new Intl.DateTimeFormat('en-GB', {
+    timeZone,
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hourCycle: 'h23',
+  });
+  let timestamp = target;
+  // Resolve local midnight using the offset in effect on that date.
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const parts = Object.fromEntries(
+      formatter.formatToParts(timestamp).map(({ type, value }) => [type, value]),
+    );
+    const localAsUtc = Date.UTC(
+      Number(parts.year), Number(parts.month) - 1, Number(parts.day),
+      Number(parts.hour), Number(parts.minute), Number(parts.second),
+    );
+    timestamp += target - localAsUtc;
+  }
+  return new Date(timestamp).toISOString();
+}
+
 async function fetchWallpaper() {
-  const url = new URL('/HPImageArchive.aspx', bingOrigin);
+  const url = new URL('/hp/api/model', bingOrigin);
   url.search = new URLSearchParams({
-    format: 'js',
-    idx: '0',
-    n: '1',
     mkt: market,
     setlang: settings.language,
     cc: settings.country,
@@ -28,8 +57,9 @@ async function fetchWallpaper() {
   if (!response.ok) throw new Error(`Bing returned HTTP ${response.status}`);
 
   const payload = await response.json();
-  const content = payload.images?.[0];
-  const image = new URL(content?.url ?? '/', bingOrigin);
+  const media = payload.MediaContents?.[0];
+  const content = media?.ImageContent;
+  const image = new URL(content?.Image?.Url ?? '/', bingOrigin);
   const imageKey = image.searchParams.get('id') ?? '';
   const match = imageKey.match(/^(OHR\.[\w.-]+_(?<market>[A-Z]{2}-[A-Z]{2})\d+)_(?:\d+x\d+|UHD)\.[a-z]+$/i);
   if (match?.groups.market.toLowerCase() !== market.toLowerCase()) {
@@ -37,24 +67,15 @@ async function fetchWallpaper() {
   }
 
   const id = match[1];
-  const title = content.title?.trim();
-  const credit = content.copyright?.trim().match(/^(.*?)\s+\((©.+)\)$/);
-  const description = credit?.[1].trim();
-  const copyright = credit?.[2].trim();
+  const title = content.Headline?.trim();
+  const description = content.Title?.trim();
+  const copyright = content.Copyright?.trim();
   if (!title || !description || !copyright) {
     throw new Error('Bing response is missing wallpaper text');
   }
 
-  const start = content.fullstartdate?.match(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})$/);
-  if (!start) throw new Error('Bing response has an invalid fullstartdate');
-  const [, year, month, day, hour, minute] = start;
-  const publishedAt = `${year}-${month}-${day}T${hour}:${minute}:00.000Z`;
-  const timestamp = Date.parse(publishedAt);
-  if (!Number.isFinite(timestamp) || new Date(timestamp).toISOString() !== publishedAt) {
-    throw new Error('Bing response has an invalid fullstartdate');
-  }
-
-  const rawLink = content.copyrightlink;
+  const publishedAt = getPublishedAt(media.Ssd, settings.timeZone);
+  const rawLink = content.BackstageUrl;
   const link = typeof rawLink === 'string' && rawLink.trim() &&
     URL.canParse(rawLink, bingOrigin) ? new URL(rawLink, bingOrigin) : null;
   const linkUrl = link && ['https:', 'http:'].includes(link.protocol)
