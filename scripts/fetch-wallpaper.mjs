@@ -89,6 +89,7 @@ async function fetchWallpaper() {
     fullHdUrl: `${bingOrigin}/th?id=${id}_1920x1080.jpg`,
     uhdUrl: `${bingOrigin}/th?id=${id}_UHD.jpg`,
     linkUrl,
+    market,
   };
 }
 
@@ -138,8 +139,7 @@ async function updateFeed() {
     const wallpaper = await fetchWallpaper();
     const feed = await readFeed();
     const existing = feed.wallpapers[market];
-    const unchanged = !force && existing?.id === wallpaper.id &&
-      JSON.stringify(existing) === JSON.stringify({ ...wallpaper, fetchedAt: existing.fetchedAt });
+    const unchanged = !force && existing?.id === wallpaper.id;
     if (unchanged) {
       console.log(`${market} unchanged: ${wallpaper.id}`);
     } else {
