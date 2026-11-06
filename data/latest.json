@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "fa7a4e7db60cd0d8",
+  "version": "4d75d6eb0823c5ee",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.PipiwaiTrail_ZH-CN1811194311",
@@ -27,6 +27,45 @@
       "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_EN-US0631882545_1920x1080.jpg",
       "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_EN-US0631882545_UHD.jpg",
       "linkUrl": "https://www.bing.com/search?q=Haleakala+National+Park&form=hpcapt&filters=HpDate:%2220261106_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
+    },
+    "ja-JP": {
+      "id": "OHR.PipiwaiTrail_JA-JP1383562325",
+      "publishedAt": "2026-11-05T15:00:00.000Z",
+      "fetchedAt": "2026-11-06T13:53:40.299Z",
+      "title": "マウイ島を抜ける緑のトンネル",
+      "description": "ピピワイ・トレイルの竹林、ハレアカラ国立公園、マウイ島、ハワイ、アメリカ",
+      "copyright": "© MNStudio/Getty Images",
+      "source": "Bing",
+      "previewUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_JA-JP1383562325_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_JA-JP1383562325_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_JA-JP1383562325_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%8f%e3%83%ac%e3%82%a2%e3%82%ab%e3%83%a9%e5%9b%bd%e7%ab%8b%e5%85%ac%e5%9c%92&form=hpcapt&filters=HpDate:%2220261105_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
+    },
+    "it-IT": {
+      "id": "OHR.PipiwaiTrail_IT-IT5147973458",
+      "publishedAt": "2026-11-05T23:00:00.000Z",
+      "fetchedAt": "2026-11-06T13:53:46.797Z",
+      "title": "Un tunnel verde nel cuore di Maui",
+      "description": "Foresta di Bambù, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii, USA",
+      "copyright": "© MNStudio/Getty Images",
+      "source": "Bing",
+      "previewUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_IT-IT5147973458_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_IT-IT5147973458_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_IT-IT5147973458_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Haleakala+National+Park&form=hpcapt&filters=HpDate:%2220261105_2300%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
+    },
+    "es-ES": {
+      "id": "OHR.PipiwaiTrail_ES-ES2022669562",
+      "publishedAt": "2026-11-05T23:00:00.000Z",
+      "fetchedAt": "2026-11-06T13:53:54.779Z",
+      "title": "Un túnel verde que atraviesa Maui",
+      "description": "Bosque de Bambú, Sendero Pīpīwai, Parque Nacional Haleakalā, Maui, Hawái, EE. UU.",
+      "copyright": "© MNStudio/Getty Images",
+      "source": "Bing",
+      "previewUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_ES-ES2022669562_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_ES-ES2022669562_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_ES-ES2022669562_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Parque+Nacional+Haleakala+&form=hpcapt&filters=HpDate:%2220261105_2300%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
     }
   }
 }
