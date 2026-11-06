@@ -6,6 +6,7 @@ export const markets = new Map([
   ['ja-JP', { language: 'ja', country: 'JP', timeZone: 'Asia/Tokyo' }],
   ['it-IT', { language: 'it', country: 'IT', timeZone: 'Europe/Rome' }],
   ['es-ES', { language: 'es', country: 'ES', timeZone: 'Europe/Madrid' }],
+  ['fr-FR', { language: 'fr', country: 'FR', timeZone: 'Europe/Paris' }],
 ]);
 
 export function getFeedVersion({ schemaVersion, wallpapers }) {

@@ -31,6 +31,7 @@ on:
           - ja-JP
           - it-IT
           - es-ES
+          - fr-FR
 
       force:
         description: Force refresh even when wallpaper data is unchanged
@@ -52,7 +53,7 @@ jobs:
     outputs:
       feed_commit: ${{ steps.feed_commit.outputs.sha }}
     env:
-      MARKETS: ${{ inputs.trigger == 'external-cron' && 'zh-CN en-US ja-JP it-IT es-ES' || inputs.market }}
+      MARKETS: ${{ inputs.trigger == 'external-cron' && 'zh-CN en-US ja-JP it-IT es-ES fr-FR' || inputs.market }}
     steps:
       - name: Check out latest default branch
         uses: actions/checkout@v6

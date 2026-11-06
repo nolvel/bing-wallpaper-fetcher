@@ -1,6 +1,6 @@
 # Bing Wallpaper Fetcher
 
-采集 Bing 每日壁纸的中国、美国、日本、意大利和西班牙市场版本，生成可供外部服务读取的 `data/latest.json`。仓库发布壁纸文案和图片 URL。
+采集 Bing 每日壁纸的中国、美国、日本、意大利、西班牙和法国市场版本，生成可供外部服务读取的 `data/latest.json`。仓库发布壁纸文案和图片 URL。
 
 ## 本地采集
 
@@ -12,6 +12,7 @@ node scripts/fetch-wallpaper.mjs en-US
 node scripts/fetch-wallpaper.mjs ja-JP
 node scripts/fetch-wallpaper.mjs it-IT
 node scripts/fetch-wallpaper.mjs es-ES
+node scripts/fetch-wallpaper.mjs fr-FR
 ```
 
 脚本通过 Bing 的 `/hp/api/model` 获取元数据，每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场的图片和元数据均无变化时，保留原记录和抓取时间。
@@ -70,9 +71,9 @@ GitHub Actions 工作流 `Fetch daily wallpaper` 使用 GitHub 托管的 `ubuntu
 {"ref":"main","inputs":{"trigger":"external-cron"}}
 ```
 
-外部定时触发依次采集 `zh-CN`、`en-US`、`ja-JP`、`it-IT` 和 `es-ES`。五个市场都采集成功后，按环境开关推送整份数据。任一市场失败时，本轮采集立即终止，跳过数据提交和推送。整个工作流串行执行，每次基于默认分支最新版本更新数据。只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。
+外部定时触发依次采集 `zh-CN`、`en-US`、`ja-JP`、`it-IT`、`es-ES` 和 `fr-FR`。六个市场都采集成功后，按环境开关推送整份数据。任一市场失败时，本轮采集立即终止，跳过数据提交和推送。整个工作流串行执行，每次基于默认分支最新版本更新数据。只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。
 
-首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择五个市场各手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行只在图片或元数据变化时更新市场记录。
+首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择六个市场各手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行只在图片或元数据变化时更新市场记录。
 
 工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。
 
