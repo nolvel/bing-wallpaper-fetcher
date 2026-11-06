@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "ae5dd09a90054970",
+  "version": "7027a3d4c2fcdfb4",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.PipiwaiTrail_ZH-CN1811194311",
@@ -66,6 +66,19 @@
       "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_ES-ES2022669562_1920x1080.jpg",
       "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_ES-ES2022669562_UHD.jpg",
       "linkUrl": "https://www.bing.com/search?q=Parque+Nacional+Haleakala+&form=hpcapt&filters=HpDate:%2220261105_2300%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
+    },
+    "fr-FR": {
+      "id": "OHR.PipiwaiTrail_FR-FR9210868970",
+      "publishedAt": "2026-11-05T23:00:00.000Z",
+      "fetchedAt": "2026-11-06T15:37:29.680Z",
+      "title": "Toit de verdure à travers Maui",
+      "description": "Forêt de bambous, Pīpīwai Trail, Hawaii, États-Unis",
+      "copyright": "© MNStudio/Getty Images",
+      "source": "Bing",
+      "previewUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_FR-FR9210868970_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_FR-FR9210868970_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.PipiwaiTrail_FR-FR9210868970_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Parc+national+Haleakal%c4%81&form=hpcapt&filters=HpDate:%2220261105_2300%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22"
     }
   }
 }
