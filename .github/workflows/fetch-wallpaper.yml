@@ -28,9 +28,12 @@ on:
         options:
           - zh-CN
           - en-US
+          - ja-JP
+          - it-IT
+          - es-ES
 
       force:
-        description: Force refresh even when the image ID is unchanged
+        description: Force refresh even when wallpaper data is unchanged
         type: boolean
         default: false
 
@@ -49,7 +52,7 @@ jobs:
     outputs:
       feed_commit: ${{ steps.feed_commit.outputs.sha }}
     env:
-      MARKETS: ${{ inputs.trigger == 'external-cron' && 'zh-CN en-US' || inputs.market }}
+      MARKETS: ${{ inputs.trigger == 'external-cron' && 'zh-CN en-US ja-JP it-IT es-ES' || inputs.market }}
     steps:
       - name: Check out latest default branch
         uses: actions/checkout@v6

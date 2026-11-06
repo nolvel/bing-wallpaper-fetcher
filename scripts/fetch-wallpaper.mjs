@@ -1,9 +1,5 @@
 import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
-
-const markets = new Map([
-  ['zh-CN', { language: 'zh', country: 'CN', timeZone: 'Asia/Shanghai' }],
-  ['en-US', { language: 'en', country: 'US', timeZone: 'America/Los_Angeles' }],
-]);
+import { getFeedVersion, markets } from './wallpaper-feed.mjs';
 const market = process.argv[2];
 const force = process.argv[3] === '--force';
 const settings = markets.get(market);
@@ -133,7 +129,7 @@ async function readFeed() {
 
 async function updateFeed() {
   if (!settings || process.argv.length > 4 || (process.argv[3] && !force)) {
-    throw new Error('Usage: node scripts/fetch-wallpaper.mjs <zh-CN|en-US> [--force]');
+    throw new Error(`Usage: node scripts/fetch-wallpaper.mjs <${[...markets.keys()].join('|')}> [--force]`);
   }
 
   await mkdir(dataDirectory, { recursive: true });
@@ -141,16 +137,23 @@ async function updateFeed() {
   try {
     const wallpaper = await fetchWallpaper();
     const feed = await readFeed();
-    if (!force && feed.wallpapers[market]?.id === wallpaper.id) {
+    const existing = feed.wallpapers[market];
+    const unchanged = !force && existing?.id === wallpaper.id &&
+      JSON.stringify(existing) === JSON.stringify({ ...wallpaper, fetchedAt: existing.fetchedAt });
+    if (unchanged) {
       console.log(`${market} unchanged: ${wallpaper.id}`);
-      return;
+    } else {
+      await validateImageUrls(wallpaper);
+      feed.wallpapers[market] = wallpaper;
     }
 
-    await validateImageUrls(wallpaper);
-    feed.wallpapers[market] = wallpaper;
-    await writeFile(temporary, `${JSON.stringify(feed, null, 2)}\n`);
+    const { schemaVersion, wallpapers } = feed;
+    const version = getFeedVersion(feed);
+    if (unchanged && feed.version === version) return;
+
+    await writeFile(temporary, `${JSON.stringify({ schemaVersion, version, wallpapers }, null, 2)}\n`);
     await rename(temporary, output);
-    console.log(`${market} updated: ${wallpaper.id}`);
+    if (!unchanged) console.log(`${market} updated: ${wallpaper.id}`);
   } finally {
     await rm(lock, { recursive: true, force: true });
   }

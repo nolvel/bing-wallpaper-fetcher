@@ -1,6 +1,6 @@
 # Bing Wallpaper Fetcher
 
-采集 Bing 每日壁纸的简体中文和美国英文版本，生成可供外部服务读取的 `data/latest.json`。仓库发布壁纸文案和图片 URL。
+采集 Bing 每日壁纸的中国、美国、日本、意大利和西班牙市场版本，生成可供外部服务读取的 `data/latest.json`。仓库发布壁纸文案和图片 URL。
 
 ## 本地采集
 
@@ -9,9 +9,12 @@
 ```bash
 node scripts/fetch-wallpaper.mjs zh-CN
 node scripts/fetch-wallpaper.mjs en-US
+node scripts/fetch-wallpaper.mjs ja-JP
+node scripts/fetch-wallpaper.mjs it-IT
+node scripts/fetch-wallpaper.mjs es-ES
 ```
 
-脚本通过 Bing 的 `/hp/api/model` 获取元数据，每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场抓到相同的图片 ID 时，保留原记录和抓取时间。
+脚本通过 Bing 的 `/hp/api/model` 获取元数据，每次运行只更新指定市场。发布新记录前，脚本会完整下载三个尺寸的图片，检查 HTTP 状态为 200、Content-Type 为图片且内容非空，每次图片请求超时为 10 秒。任一图片验证失败、请求失败、返回的市场不符或文案缺失时，脚本以非零状态退出并保留已有数据。同一市场的图片和元数据均无变化时，保留原记录和抓取时间。
 
 添加 `--force` 可强制重新采集指定市场，即使图片 ID 相同也会重新验证三个图片地址并替换整条记录，刷新 `fetchedAt`。验证失败时保留已有数据。
 
@@ -29,6 +32,7 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 ```json
 {
   "schemaVersion": 1,
+  "version": "9f2c6f71b4ad807e",
   "wallpapers": {
     "en-US": {
       "id": "OHR.AutumnChina_EN-US0467722422",
@@ -47,8 +51,9 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 }
 ```
 
-- `id` 是图片标识，可用于判断壁纸是否更新。
-- `publishedAt` 表示约定的市场展示日期零点。将 `Ssd` 按 `zh-CN` 的 `Asia/Shanghai` 或 `en-US` 的 `America/Los_Angeles` 当地零点转换为 UTC，自动处理美国夏令时；该值不表示实际发布延迟。
+- `version` 是整份数据的版本号。对 `schemaVersion` 和 `wallpapers` 按固定对象键顺序序列化，取 MD5 摘要的前 16 个十六进制字符。
+- `id` 是图片标识，可用于判断该市场是否换图。
+- `publishedAt` 表示约定的市场展示日期零点。脚本将 `Ssd` 对应的当地零点转换为 UTC，并使用该市场的时区规则处理夏令时。
 - `fetchedAt` 是该条记录最近一次成功采集并写入时的 UTC 时间，采用 ISO 8601 格式。
 - `previewUrl` 对应 640×360 预览，`fullHdUrl` 对应 1920×1080 背景，`uhdUrl` 用于高分屏。UHD 加载失败时可回退到 Full HD。
 - `linkUrl` 取自 Bing 的 `BackstageUrl`，指向壁纸主题的搜索页面。相对路径会转成完整 URL，缺失或无效时返回 `null`。
@@ -65,9 +70,9 @@ GitHub Actions 工作流 `Fetch daily wallpaper` 使用 GitHub 托管的 `ubuntu
 {"ref":"main","inputs":{"trigger":"external-cron"}}
 ```
 
-外部定时触发依次采集 `zh-CN` 和 `en-US`，两者成功后按环境开关推送。整个工作流串行执行，每次基于默认分支最新版本更新数据。只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。任一市场采集失败会使任务失败，已有仓库数据保留。
+外部定时触发依次采集 `zh-CN`、`en-US`、`ja-JP`、`it-IT` 和 `es-ES`。五个市场都采集成功后，按环境开关推送整份数据。任一市场失败时，本轮采集立即终止，跳过数据提交和推送。整个工作流串行执行，每次基于默认分支最新版本更新数据。只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。
 
-首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行默认按图片 ID 去重。
+首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择五个市场各手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行只在图片或元数据变化时更新市场记录。
 
 工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。
 

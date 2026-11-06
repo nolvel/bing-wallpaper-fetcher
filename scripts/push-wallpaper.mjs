@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { setTimeout as delay } from 'node:timers/promises';
+import { getFeedVersion, markets } from './wallpaper-feed.mjs';
 
 function requiredEnv(name) {
   const value = process.env[name]?.trim();
@@ -26,10 +27,13 @@ async function pushWallpaper() {
     throw new Error('Invalid or empty data/latest.json');
   }
   for (const [market, wallpaper] of Object.entries(data.wallpapers)) {
-    if (!['zh-CN', 'en-US'].includes(market) || !wallpaper?.id || !wallpaper.publishedAt ||
+    if (!markets.has(market) || !wallpaper?.id || !wallpaper.publishedAt ||
         !Number.isFinite(Date.parse(wallpaper.publishedAt))) {
       throw new Error(`Invalid wallpaper record for ${market}`);
     }
+  }
+  if (data.version !== getFeedVersion(data)) {
+    throw new Error('Invalid version in data/latest.json');
   }
 
   // Match PHP json_encode(data, JSON_UNESCAPED_UNICODE).
@@ -37,9 +41,9 @@ async function pushWallpaper() {
     .replace(/\//g, '\\/')
     .replace(/\u2028/g, '\\u2028')
     .replace(/\u2029/g, '\\u2029');
-  const markets = Object.keys(data.wallpapers).join(', ');
+  const marketList = Object.keys(data.wallpapers).join(', ');
   if (args[0] === '--dry-run') {
-    console.log(`Validated push configuration and data for ${markets}`);
+    console.log(`Validated push configuration and data for ${marketList}`);
     console.log('Dry run complete; request was not sent');
     return;
   }
@@ -78,7 +82,7 @@ async function pushWallpaper() {
       if (result?.status !== 1) {
         throw new Error(`Wallpaper push was rejected: ${message}`);
       }
-      console.log(`Wallpaper push succeeded for ${markets}`);
+      console.log(`Wallpaper push succeeded for ${marketList}`);
       return;
     } catch (error) {
       if (!retryable || attempt === retryDelays.length) throw error;
