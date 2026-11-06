@@ -57,13 +57,19 @@ Bing 的市场返回结果可能随网络出口而变化。部署前请在实际
 
 GitHub Actions 工作流 `Fetch daily wallpaper` 使用 GitHub 托管的 `ubuntu-latest` runner 和 Node.js 24。
 
-定时任务在北京时间每小时第 3 分钟运行一次（例如 00:03、01:03），每次依次采集 `zh-CN` 和 `en-US`，两个市场全部成功后提交数据并按环境开关推送。
+定时采集由 Cloudflare Workers 的 [Cron Trigger](https://developers.cloudflare.com/workers/configuration/cron-triggers/) 触发。将 cron 配置为 `3 * * * *`，在北京时间每小时第 3 分钟请求 GitHub 的 [workflow dispatch API](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event)。在 Worker 中将仅授权本仓库、具有 `Actions: Read and write` 权限的 fine-grained PAT 存为 `GITHUB_TOKEN` Secret。
 
-定时任务从默认分支运行，实际触发时间可能因 GitHub Actions 排队而延迟。整个工作流串行执行，每次基于默认分支最新版本更新数据。采集和图片验证成功后，只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。任一市场采集失败会使任务失败，不提交数据或向环境推送，已有仓库数据保留。
+向 `POST /repos/nolvel/bing-wallpaper-fetcher/actions/workflows/fetch-wallpaper.yml/dispatches` 发送以下 JSON：
+
+```json
+{"ref":"main","inputs":{"trigger":"external-cron"}}
+```
+
+外部定时触发依次采集 `zh-CN` 和 `en-US`，两者成功后按环境开关推送。整个工作流串行执行，每次基于默认分支最新版本更新数据。只在 `data/latest.json` 有变化时由 `github-actions[bot]` 提交并推送。任一市场采集失败会使任务失败，已有仓库数据保留。
 
 首次发布时，先完成下方 GitHub Actions 推送环境配置，再将 workflow 推送到默认分支。在仓库的 **Actions → Fetch daily wallpaper → Run workflow** 中选择 `target_environment`，并分别选择 `zh-CN` 和 `en-US` 手动运行一次，验证市场数据并生成完整 JSON，同时向所选环境推送。手动运行时可勾选 `force`，强制重新验证并更新所选市场的记录；定时运行默认按图片 ID 去重。
 
-工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。公开仓库连续 60 天没有活动时，GitHub 可能禁用定时工作流，可在 Actions 页面重新启用。
+工作流通过内置的 `GITHUB_TOKEN` 和 `contents: write` 权限提交。仓库或组织的 Actions 策略需要允许该权限，分支规则也需要允许工作流直接推送。
 
 ## GitHub Actions 推送环境
 

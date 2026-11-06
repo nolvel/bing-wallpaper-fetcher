@@ -1,11 +1,16 @@
 name: Fetch daily wallpaper
 
 on:
-  schedule:
-    - cron: '3 * * * *'
-      timezone: Asia/Shanghai
   workflow_dispatch:
     inputs:
+      trigger:
+        description: Run mode
+        type: choice
+        default: manual
+        options:
+          - manual
+          - external-cron
+
       target_environment:
         description: Push target environment
         required: true
@@ -44,7 +49,7 @@ jobs:
     outputs:
       feed_commit: ${{ steps.feed_commit.outputs.sha }}
     env:
-      MARKETS: ${{ github.event_name == 'workflow_dispatch' && inputs.market || 'zh-CN en-US' }}
+      MARKETS: ${{ inputs.trigger == 'external-cron' && 'zh-CN en-US' || inputs.market }}
     steps:
       - name: Check out latest default branch
         uses: actions/checkout@v6
@@ -58,7 +63,7 @@ jobs:
 
       - name: Fetch wallpaper
         env:
-          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force || false }}
+          FORCE: ${{ inputs.trigger != 'external-cron' && inputs.force }}
         run: |
           read -r -a markets <<< "$MARKETS"
           for market in "${markets[@]}"; do
@@ -97,7 +102,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        environment: ${{ fromJSON(github.event_name == 'schedule' && '["test", "production"]' || format('["{0}"]', inputs.target_environment)) }}
+        environment: ${{ fromJSON(inputs.trigger == 'external-cron' && '["test", "production"]' || format('["{0}"]', inputs.target_environment)) }}
     environment:
       name: ${{ matrix.environment }}
     steps:
@@ -105,10 +110,10 @@ jobs:
       - name: Check push switch
         id: push_switch
         env:
-          EVENT_NAME: ${{ github.event_name }}
+          TRIGGER: ${{ inputs.trigger }}
           SCHEDULE_PUSH_ENABLED: ${{ vars.SCHEDULE_PUSH_ENABLED }}
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$SCHEDULE_PUSH_ENABLED" = "true" ]; then
+          if [ "$TRIGGER" != "external-cron" ] || [ "$SCHEDULE_PUSH_ENABLED" = "true" ]; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "Scheduled push disabled for this environment"
