@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "41bbff9f04eea736",
+  "version": "e0abd8043434f3a8",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.DiwaliLamps_ZH-CN2462894749",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.DiwaliLamps_JA-JP0443643151",
-      "publishedAt": "2026-11-07T15:00:00.000Z",
-      "fetchedAt": "2026-11-07T15:03:46.576Z",
-      "title": "光に包まれる祝祭",
-      "description": "ディーワーリーを彩るランタン、ムンバイ、マハーラーシュトラ州、インド",
-      "copyright": "© Dinodia Photo/Getty Images",
+      "id": "OHR.TrianaSpain_JA-JP2076026093",
+      "publishedAt": "2026-11-08T15:00:00.000Z",
+      "fetchedAt": "2026-11-08T15:03:48.321Z",
+      "title": "芸術がリズムを刻む街",
+      "description": "セビリアの歴史地区トリアナ、スペイン",
+      "copyright": "© Andrzej Rostek/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_JA-JP0443643151_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_JA-JP0443643151_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_JA-JP0443643151_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%87%e3%82%a3%e3%83%bc%e3%83%af%e3%83%bc%e3%83%aa%e3%83%bc&form=hpcapt&filters=HpDate:%2220261107_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%bb%e3%83%93%e3%83%aa%e3%82%a2+%e3%82%b9%e3%83%9a%e3%82%a4%e3%83%b3&form=hpcapt&filters=HpDate:%2220261108_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
