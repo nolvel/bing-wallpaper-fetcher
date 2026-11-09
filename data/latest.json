@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "492f86c6671048e4",
+  "version": "eb5afc968123f88e",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.TrianaSpain_ZH-CN6329291776",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.DiwaliLamps_EN-US0788074051",
-      "publishedAt": "2026-11-08T08:00:00.000Z",
-      "fetchedAt": "2026-11-08T08:03:48.755Z",
-      "title": "A celebration that shines",
-      "description": "Lanterns for Diwali, Mumbai, Maharashtra, India",
-      "copyright": "© Dinodia Photo/Getty Images",
+      "id": "OHR.TrianaSpain_EN-US0872031458",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "fetchedAt": "2026-11-09T08:03:47.832Z",
+      "title": "Where art finds its rhythm",
+      "description": "Historic district of Triana, Seville, Spain",
+      "copyright": "© Andrzej Rostek/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_EN-US0788074051_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_EN-US0788074051_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.DiwaliLamps_EN-US0788074051_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Diwali&form=hpcapt&filters=HpDate:%2220261108_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Seville+Spain&form=hpcapt&filters=HpDate:%2220261109_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
