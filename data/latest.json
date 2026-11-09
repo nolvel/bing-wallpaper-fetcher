@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "eb5afc968123f88e",
+  "version": "c25967bd3f298bd5",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.TrianaSpain_ZH-CN6329291776",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.TrianaSpain_JA-JP2076026093",
-      "publishedAt": "2026-11-08T15:00:00.000Z",
-      "fetchedAt": "2026-11-08T15:03:48.321Z",
-      "title": "芸術がリズムを刻む街",
-      "description": "セビリアの歴史地区トリアナ、スペイン",
-      "copyright": "© Andrzej Rostek/Getty Images",
+      "id": "OHR.RoseIsland_JA-JP3257968381",
+      "publishedAt": "2026-11-09T15:00:00.000Z",
+      "fetchedAt": "2026-11-09T15:03:47.342Z",
+      "title": "楽園でひと休み",
+      "description": "ローズ島の空撮、バハマ",
+      "copyright": "© Abstract Aerial Art/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_JA-JP2076026093_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%bb%e3%83%93%e3%83%aa%e3%82%a2+%e3%82%b9%e3%83%9a%e3%82%a4%e3%83%b3&form=hpcapt&filters=HpDate:%2220261108_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%ad%e3%83%bc%e3%82%ba%e5%b3%b6+%e3%83%90%e3%83%8f%e3%83%9e&form=hpcapt&filters=HpDate:%2220261109_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
