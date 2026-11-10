@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "8c363d32ecb6ff34",
+  "version": "5eb803b1f638e1d5",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.RoseIsland_ZH-CN6477140814",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.TrianaSpain_EN-US0872031458",
-      "publishedAt": "2026-11-09T08:00:00.000Z",
-      "fetchedAt": "2026-11-09T08:03:47.832Z",
-      "title": "Where art finds its rhythm",
-      "description": "Historic district of Triana, Seville, Spain",
-      "copyright": "© Andrzej Rostek/Getty Images",
+      "id": "OHR.RoseIsland_EN-US0952497192",
+      "publishedAt": "2026-11-10T08:00:00.000Z",
+      "fetchedAt": "2026-11-10T08:03:48.297Z",
+      "title": "Licensed to chill",
+      "description": "Aerial view of Rose Island, The Bahamas",
+      "copyright": "© Abstract Aerial Art/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.TrianaSpain_EN-US0872031458_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Seville+Spain&form=hpcapt&filters=HpDate:%2220261109_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.RoseIsland_EN-US0952497192_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_EN-US0952497192_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_EN-US0952497192_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Rose+Island+Bahamas&form=hpcapt&filters=HpDate:%2220261110_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
