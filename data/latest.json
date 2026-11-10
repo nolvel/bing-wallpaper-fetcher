@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "5eb803b1f638e1d5",
+  "version": "b499102576050560",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.RoseIsland_ZH-CN6477140814",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.RoseIsland_JA-JP3257968381",
-      "publishedAt": "2026-11-09T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T15:03:47.342Z",
-      "title": "楽園でひと休み",
-      "description": "ローズ島の空撮、バハマ",
-      "copyright": "© Abstract Aerial Art/Getty Images",
+      "id": "OHR.Atlantica_JA-JP3902829738",
+      "publishedAt": "2026-11-10T15:00:00.000Z",
+      "fetchedAt": "2026-11-10T15:03:52.492Z",
+      "title": "驚きに満ちた森",
+      "description": "大西洋岸森林、ブラジル",
+      "copyright": "© FG Trade/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.RoseIsland_JA-JP3257968381_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%ad%e3%83%bc%e3%82%ba%e5%b3%b6+%e3%83%90%e3%83%8f%e3%83%9e&form=hpcapt&filters=HpDate:%2220261109_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e5%a4%a7%e8%a5%bf%e6%b4%8b%e5%b2%b8%e6%a3%ae%e6%9e%97+%e3%83%96%e3%83%a9%e3%82%b8%e3%83%ab&form=hpcapt&filters=HpDate:%2220261110_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
