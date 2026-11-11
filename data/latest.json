@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "284be18919b8fedf",
+  "version": "fe7723e9281e8b9b",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.Atlantica_ZH-CN6593995386",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.Atlantica_JA-JP3902829738",
-      "publishedAt": "2026-11-10T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T15:03:52.492Z",
-      "title": "驚きに満ちた森",
-      "description": "大西洋岸森林、ブラジル",
-      "copyright": "© FG Trade/Getty Images",
+      "id": "OHR.NorthWindow_JA-JP8307735119",
+      "publishedAt": "2026-11-11T15:00:00.000Z",
+      "fetchedAt": "2026-11-11T15:03:48.089Z",
+      "title": "自然が生んだ建築美",
+      "description": "ノース・ウィンドウ、アーチーズ国立公園、モアブ、ユタ州、アメリカ",
+      "copyright": "© lightphoto/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.Atlantica_JA-JP3902829738_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e5%a4%a7%e8%a5%bf%e6%b4%8b%e5%b2%b8%e6%a3%ae%e6%9e%97+%e3%83%96%e3%83%a9%e3%82%b8%e3%83%ab&form=hpcapt&filters=HpDate:%2220261110_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%a2%e3%83%bc%e3%83%81%e3%83%bc%e3%82%ba%e5%9b%bd%e7%ab%8b%e5%85%ac%e5%9c%92&form=hpcapt&filters=HpDate:%2220261111_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
