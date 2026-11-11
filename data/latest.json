@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "version": "fe7723e9281e8b9b",
+  "version": "d2638ad5e20376b3",
   "wallpapers": {
     "zh-CN": {
-      "id": "OHR.Atlantica_ZH-CN6593995386",
-      "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-10T16:03:56.209Z",
-      "title": "奇妙纷呈的森林",
-      "description": "大西洋森林，巴西",
-      "copyright": "© FG Trade/Getty Images",
+      "id": "OHR.NorthWindow_ZH-CN6734579353",
+      "publishedAt": "2026-11-11T16:00:00.000Z",
+      "fetchedAt": "2026-11-11T16:03:48.216Z",
+      "title": "没有建筑师的建筑杰作",
+      "description": "北窗，拱门国家公园，莫阿布，犹他州，美国",
+      "copyright": "© lightphoto/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.Atlantica_ZH-CN6593995386_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.Atlantica_ZH-CN6593995386_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.Atlantica_ZH-CN6593995386_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e5%b7%b4%e8%a5%bf%e5%a4%a7%e8%a5%bf%e6%b4%8b%e6%a3%ae%e6%9e%97&form=hpcapt&filters=HpDate:%2220261110_1600%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_ZH-CN6734579353_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e6%8b%b1%e9%97%a8%e5%9b%bd%e5%ae%b6%e5%85%ac%e5%9b%ad&form=hpcapt&filters=HpDate:%2220261111_1600%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "zh-CN"
     },
     "en-US": {
