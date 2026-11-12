@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "c64da6de7fd9031b",
+  "version": "69033cb1f3b77abe",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.NorthWindow_ZH-CN6734579353",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.NorthWindow_JA-JP8307735119",
-      "publishedAt": "2026-11-11T15:00:00.000Z",
-      "fetchedAt": "2026-11-11T15:03:48.089Z",
-      "title": "自然が生んだ建築美",
-      "description": "ノース・ウィンドウ、アーチーズ国立公園、モアブ、ユタ州、アメリカ",
-      "copyright": "© lightphoto/Getty Images",
+      "id": "OHR.AbrahamCanada_JA-JP9609532400",
+      "publishedAt": "2026-11-12T15:00:00.000Z",
+      "fetchedAt": "2026-11-12T15:03:49.707Z",
+      "title": "氷の下の神秘",
+      "description": "アブラハム湖、アルバータ州、カナダ",
+      "copyright": "© Guang Cao/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_JA-JP8307735119_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%a2%e3%83%bc%e3%83%81%e3%83%bc%e3%82%ba%e5%9b%bd%e7%ab%8b%e5%85%ac%e5%9c%92&form=hpcapt&filters=HpDate:%2220261111_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%a2%e3%83%96%e3%83%a9%e3%83%8f%e3%83%a0%e6%b9%96+%e3%82%a2%e3%83%ab%e3%83%90%e3%83%bc%e3%82%bf%e5%b7%9e&form=hpcapt&filters=HpDate:%2220261112_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
