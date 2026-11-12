@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "4ca5cb95d3196a73",
+  "version": "c64da6de7fd9031b",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.NorthWindow_ZH-CN6734579353",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.SunsetFlags_EN-US1046151448",
-      "publishedAt": "2026-11-11T08:00:00.000Z",
-      "fetchedAt": "2026-11-11T08:03:47.723Z",
-      "title": "A salute in red, white, and blue",
-      "description": "American flags in a public park in upstate New York",
-      "copyright": "© Matt Champlin/Getty Images",
+      "id": "OHR.NorthWindow_EN-US1170338293",
+      "publishedAt": "2026-11-12T08:00:00.000Z",
+      "fetchedAt": "2026-11-12T08:03:48.943Z",
+      "title": "Architecture without an architect",
+      "description": "North Window, Arches National Park, Moab, Utah",
+      "copyright": "© lightphoto/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.SunsetFlags_EN-US1046151448_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Veterans+Day&form=hpcapt&filters=HpDate:%2220261111_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Arches+National+Park&form=hpcapt&filters=HpDate:%2220261112_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
