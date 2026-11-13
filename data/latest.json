@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "baee2d254d802631",
+  "version": "e6f1088a9c450b7c",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.AbrahamCanada_ZH-CN0344365912",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.NorthWindow_EN-US1170338293",
-      "publishedAt": "2026-11-12T08:00:00.000Z",
-      "fetchedAt": "2026-11-12T08:03:48.943Z",
-      "title": "Architecture without an architect",
-      "description": "North Window, Arches National Park, Moab, Utah",
-      "copyright": "© lightphoto/Getty Images",
+      "id": "OHR.AbrahamCanada_EN-US3455540217",
+      "publishedAt": "2026-11-13T08:00:00.000Z",
+      "fetchedAt": "2026-11-13T08:03:46.646Z",
+      "title": "Hidden depths",
+      "description": "Abraham Lake in Alberta, Canada",
+      "copyright": "© Guang Cao/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.NorthWindow_EN-US1170338293_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Arches+National+Park&form=hpcapt&filters=HpDate:%2220261112_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_EN-US3455540217_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_EN-US3455540217_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_EN-US3455540217_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Abraham+Lake+Alberta&form=hpcapt&filters=HpDate:%2220261113_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
