@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "e6f1088a9c450b7c",
+  "version": "958af47fcf85f0ed",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.AbrahamCanada_ZH-CN0344365912",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.AbrahamCanada_JA-JP9609532400",
-      "publishedAt": "2026-11-12T15:00:00.000Z",
-      "fetchedAt": "2026-11-12T15:03:49.707Z",
-      "title": "氷の下の神秘",
-      "description": "アブラハム湖、アルバータ州、カナダ",
-      "copyright": "© Guang Cao/Getty Images",
+      "id": "OHR.BlueHK_JA-JP0477081186",
+      "publishedAt": "2026-11-13T15:00:00.000Z",
+      "fetchedAt": "2026-11-13T15:04:09.481Z",
+      "title": "上へ上へと伸びる街",
+      "description": "ビクトリア・ハーバー、香港、中国",
+      "copyright": "© Juan Romero/Cavan Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.AbrahamCanada_JA-JP9609532400_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%a2%e3%83%96%e3%83%a9%e3%83%8f%e3%83%a0%e6%b9%96+%e3%82%a2%e3%83%ab%e3%83%90%e3%83%bc%e3%82%bf%e5%b7%9e&form=hpcapt&filters=HpDate:%2220261112_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%93%e3%82%af%e3%83%88%e3%83%aa%e3%82%a2%e3%83%bb%e3%83%8f%e3%83%bc%e3%83%90%e3%83%bc+%e9%a6%99%e6%b8%af&form=hpcapt&filters=HpDate:%2220261113_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
