@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "316db695d1c64486",
+  "version": "5ade472ba62aaefa",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.BlueHK_ZH-CN1382345392",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.BlueHK_JA-JP0477081186",
-      "publishedAt": "2026-11-13T15:00:00.000Z",
-      "fetchedAt": "2026-11-13T15:04:09.481Z",
-      "title": "上へ上へと伸びる街",
-      "description": "ビクトリア・ハーバー、香港、中国",
-      "copyright": "© Juan Romero/Cavan Images",
+      "id": "OHR.FirstFrost_JA-JP1519167944",
+      "publishedAt": "2026-11-14T15:00:00.000Z",
+      "fetchedAt": "2026-11-14T15:03:48.067Z",
+      "title": "霜化粧の葉",
+      "description": "赤い葉に霜が降りたツツジ",
+      "copyright": "© avoferten/Shutterstock",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.BlueHK_JA-JP0477081186_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%93%e3%82%af%e3%83%88%e3%83%aa%e3%82%a2%e3%83%bb%e3%83%8f%e3%83%bc%e3%83%90%e3%83%bc+%e9%a6%99%e6%b8%af&form=hpcapt&filters=HpDate:%2220261113_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%84%e3%83%84%e3%82%b8&form=hpcapt&filters=HpDate:%2220261114_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
