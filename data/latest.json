@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "07650aad9fe28129",
+  "version": "e945879857b8d571",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.FirstFrost_ZH-CN2219029557",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.FirstFrost_JA-JP1519167944",
-      "publishedAt": "2026-11-14T15:00:00.000Z",
-      "fetchedAt": "2026-11-14T15:03:48.067Z",
-      "title": "霜化粧の葉",
-      "description": "赤い葉に霜が降りたツツジ",
-      "copyright": "© avoferten/Shutterstock",
+      "id": "OHR.GilaCliff_JA-JP2766300250",
+      "publishedAt": "2026-11-15T15:00:00.000Z",
+      "fetchedAt": "2026-11-15T15:03:46.904Z",
+      "title": "時を超える崖の住まい",
+      "description": "ヒラ・クリフ・ドウェリングス国定記念物、ニューメキシコ州、アメリカ",
+      "copyright": "© Chiara Salvadori/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_JA-JP1519167944_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%84%e3%83%84%e3%82%b8&form=hpcapt&filters=HpDate:%2220261114_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%92%e3%83%a9%e3%83%bb%e3%82%af%e3%83%aa%e3%83%95%e3%83%bb%e3%83%89%e3%82%a6%e3%82%a7%e3%83%aa%e3%83%b3%e3%82%b0%e3%82%b9%e5%9b%bd%e5%ae%9a%e8%a8%98%e5%bf%b5%e7%89%a9&form=hpcapt&filters=HpDate:%2220261115_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
