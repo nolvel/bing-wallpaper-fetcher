@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "28fbc6c4722b8ac1",
+  "version": "07650aad9fe28129",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.FirstFrost_ZH-CN2219029557",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.BlueHK_EN-US7870996687",
-      "publishedAt": "2026-11-14T08:00:00.000Z",
-      "fetchedAt": "2026-11-14T08:03:47.898Z",
-      "title": "The only way is up",
-      "description": "Victoria Harbour, Hong Kong, China",
-      "copyright": "© Juan Romero/Cavan Images",
+      "id": "OHR.FirstFrost_EN-US8881008245",
+      "publishedAt": "2026-11-15T08:00:00.000Z",
+      "fetchedAt": "2026-11-15T08:03:47.837Z",
+      "title": "Frosty foliage",
+      "description": "Frozen azalea with red leaves",
+      "copyright": "© avoferten/Shutterstock",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.BlueHK_EN-US7870996687_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.BlueHK_EN-US7870996687_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.BlueHK_EN-US7870996687_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Victoria+Harbour+Hong+Kong&form=hpcapt&filters=HpDate:%2220261114_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=azaleas&form=hpcapt&filters=HpDate:%2220261115_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
