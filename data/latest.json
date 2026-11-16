@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "6b58f24059d0fb31",
+  "version": "0cce819df1ae6780",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.GilaCliff_ZH-CN2393001519",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.FirstFrost_EN-US8881008245",
-      "publishedAt": "2026-11-15T08:00:00.000Z",
-      "fetchedAt": "2026-11-15T08:03:47.837Z",
-      "title": "Frosty foliage",
-      "description": "Frozen azalea with red leaves",
-      "copyright": "© avoferten/Shutterstock",
+      "id": "OHR.GilaCliff_EN-US2139490645",
+      "publishedAt": "2026-11-16T08:00:00.000Z",
+      "fetchedAt": "2026-11-16T08:04:02.556Z",
+      "title": "Built to last",
+      "description": "Gila Cliff Dwellings National Monument, New Mexico",
+      "copyright": "© Chiara Salvadori/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.FirstFrost_EN-US8881008245_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=azaleas&form=hpcapt&filters=HpDate:%2220261115_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Gila+Cliff+Dwellings+National+Monument&form=hpcapt&filters=HpDate:%2220261116_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
