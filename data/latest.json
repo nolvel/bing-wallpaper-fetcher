@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0cce819df1ae6780",
+  "version": "b997115896e6f758",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.GilaCliff_ZH-CN2393001519",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.GilaCliff_JA-JP2766300250",
-      "publishedAt": "2026-11-15T15:00:00.000Z",
-      "fetchedAt": "2026-11-15T15:03:46.904Z",
-      "title": "時を超える崖の住まい",
-      "description": "ヒラ・クリフ・ドウェリングス国定記念物、ニューメキシコ州、アメリカ",
-      "copyright": "© Chiara Salvadori/Getty Images",
+      "id": "OHR.TrailCedars_JA-JP3850490248",
+      "publishedAt": "2026-11-16T15:00:00.000Z",
+      "fetchedAt": "2026-11-16T15:03:49.576Z",
+      "title": "さあ、大自然の中へ",
+      "description": "トレイル・オブ・ザ・シーダーズ、グレイシャー国立公園、モンタナ州、アメリカ",
+      "copyright": "© DBushue Photography/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_JA-JP2766300250_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%92%e3%83%a9%e3%83%bb%e3%82%af%e3%83%aa%e3%83%95%e3%83%bb%e3%83%89%e3%82%a6%e3%82%a7%e3%83%aa%e3%83%b3%e3%82%b0%e3%82%b9%e5%9b%bd%e5%ae%9a%e8%a8%98%e5%bf%b5%e7%89%a9&form=hpcapt&filters=HpDate:%2220261115_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.TrailCedars_JA-JP3850490248_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrailCedars_JA-JP3850490248_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.TrailCedars_JA-JP3850490248_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%b0%e3%83%ac%e3%82%a4%e3%82%b7%e3%83%a3%e3%83%bc%e5%9b%bd%e7%ab%8b%e5%85%ac%e5%9c%92&form=hpcapt&filters=HpDate:%2220261116_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
