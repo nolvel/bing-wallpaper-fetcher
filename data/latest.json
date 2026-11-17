@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0579c623a31e29cb",
+  "version": "db202b8c1789bfb3",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.TrailCedars_ZH-CN2670680285",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.GilaCliff_EN-US2139490645",
-      "publishedAt": "2026-11-16T08:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:04:02.556Z",
-      "title": "Built to last",
-      "description": "Gila Cliff Dwellings National Monument, New Mexico",
-      "copyright": "© Chiara Salvadori/Getty Images",
+      "id": "OHR.TrailCedars_EN-US2240500417",
+      "publishedAt": "2026-11-17T08:00:00.000Z",
+      "fetchedAt": "2026-11-17T08:03:57.168Z",
+      "title": "Step into the great outdoors",
+      "description": "Trail of the Cedars, Glacier National Park, Montana",
+      "copyright": "© DBushue Photography/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.GilaCliff_EN-US2139490645_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Gila+Cliff+Dwellings+National+Monument&form=hpcapt&filters=HpDate:%2220261116_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.TrailCedars_EN-US2240500417_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Take+a+Hike+Day&form=hpcapt&filters=HpDate:%2220261117_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
