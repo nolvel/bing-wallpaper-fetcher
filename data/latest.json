@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "de61acc9b0fbdc60",
+  "version": "9cc75c33534912c6",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.BarnOwlsUnite_ZH-CN2930153291",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.BarnOwlsUnite_JA-JP5990292316",
-      "publishedAt": "2026-11-17T15:00:00.000Z",
-      "fetchedAt": "2026-11-17T15:03:53.486Z",
-      "title": "夕暮れから始まる狩り",
-      "description": "メンフクロウのつがい",
-      "copyright": "© Zahoor Salmi/Getty Images",
+      "id": "OHR.KnowledgeSculpture_JA-JP6514822082",
+      "publishedAt": "2026-11-18T15:00:00.000Z",
+      "fetchedAt": "2026-11-18T15:03:51.957Z",
+      "title": "アイデアが形になる場所",
+      "description": "ジャウメ・プレンサの彫刻「ボディ・オブ・ノレッジ」、ゲーテ大学、フランクフルト、ドイツ",
+      "copyright": "© Todamo/Shutterstock",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_JA-JP5990292316_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_JA-JP5990292316_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_JA-JP5990292316_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%a1%e3%83%b3%e3%83%95%e3%82%af%e3%83%ad%e3%82%a6&form=hpcapt&filters=HpDate:%2220261117_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e4%b8%96%e7%95%8c%e5%93%b2%e5%ad%a6%e3%81%ae%e6%97%a5&form=hpcapt&filters=HpDate:%2220261118_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
