@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "5bab05be5683df6a",
+  "version": "1041a72aabbde330",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.KnowledgeSculpture_ZH-CN3168800853",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.KnowledgeSculpture_JA-JP6514822082",
-      "publishedAt": "2026-11-18T15:00:00.000Z",
-      "fetchedAt": "2026-11-18T15:03:51.957Z",
-      "title": "アイデアが形になる場所",
-      "description": "ジャウメ・プレンサの彫刻「ボディ・オブ・ノレッジ」、ゲーテ大学、フランクフルト、ドイツ",
-      "copyright": "© Todamo/Shutterstock",
+      "id": "OHR.Megaptera_JA-JP4163269980",
+      "publishedAt": "2026-11-19T15:00:00.000Z",
+      "fetchedAt": "2026-11-19T15:04:01.795Z",
+      "title": "フィヨルドを訪れる冬の使者",
+      "description": "潜るザトウクジラ、クヴァロイア島、トロムス県、ノルウェー",
+      "copyright": "© Espen Bergersen/Minden Pictures",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_JA-JP6514822082_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e4%b8%96%e7%95%8c%e5%93%b2%e5%ad%a6%e3%81%ae%e6%97%a5&form=hpcapt&filters=HpDate:%2220261118_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%b6%e3%83%88%e3%82%a6%e3%82%af%e3%82%b8%e3%83%a9&form=hpcapt&filters=HpDate:%2220261119_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
