@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "35f4bc8c2eae1b1c",
+  "version": "5bab05be5683df6a",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.KnowledgeSculpture_ZH-CN3168800853",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.BarnOwlsUnite_EN-US9661992435",
-      "publishedAt": "2026-11-18T08:00:00.000Z",
-      "fetchedAt": "2026-11-18T08:03:52.605Z",
-      "title": "Hunting from dusk till dawn",
-      "description": "Pair of barn owls",
-      "copyright": "© Zahoor Salmi/Getty Images",
+      "id": "OHR.KnowledgeSculpture_EN-US9746703110",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "fetchedAt": "2026-11-19T08:03:49.487Z",
+      "title": "Where ideas take shape",
+      "description": "The \"Body of Knowledge\" sculpture by Jaume Plensa at Goethe University in Frankfurt, Germany",
+      "copyright": "© Todamo/Shutterstock",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_EN-US9661992435_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_EN-US9661992435_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.BarnOwlsUnite_EN-US9661992435_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=Barn+owl&form=hpcapt&filters=HpDate:%2220261118_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=World+Philosophy+Day&form=hpcapt&filters=HpDate:%2220261119_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
