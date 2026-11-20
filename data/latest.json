@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "67c17420e7ba86b7",
+  "version": "0c9ef96cc7c8d4f7",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.Megaptera_ZH-CN3361807823",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.KnowledgeSculpture_EN-US9746703110",
-      "publishedAt": "2026-11-19T08:00:00.000Z",
-      "fetchedAt": "2026-11-19T08:03:49.487Z",
-      "title": "Where ideas take shape",
-      "description": "The \"Body of Knowledge\" sculpture by Jaume Plensa at Goethe University in Frankfurt, Germany",
-      "copyright": "© Todamo/Shutterstock",
+      "id": "OHR.Megaptera_EN-US1728719939",
+      "publishedAt": "2026-11-20T08:00:00.000Z",
+      "fetchedAt": "2026-11-20T08:03:47.936Z",
+      "title": "Feasting in the fjords",
+      "description": "Diving humpback whale, Kvaloya, Troms, Northern Norway",
+      "copyright": "© Espen Bergersen/Minden Pictures",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.KnowledgeSculpture_EN-US9746703110_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=World+Philosophy+Day&form=hpcapt&filters=HpDate:%2220261119_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=humpback+whales&form=hpcapt&filters=HpDate:%2220261120_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
