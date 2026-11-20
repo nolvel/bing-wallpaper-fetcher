@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "0c9ef96cc7c8d4f7",
+  "version": "07ed9d2e424bae76",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.Megaptera_ZH-CN3361807823",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.Megaptera_JA-JP4163269980",
-      "publishedAt": "2026-11-19T15:00:00.000Z",
-      "fetchedAt": "2026-11-19T15:04:01.795Z",
-      "title": "フィヨルドを訪れる冬の使者",
-      "description": "潜るザトウクジラ、クヴァロイア島、トロムス県、ノルウェー",
-      "copyright": "© Espen Bergersen/Minden Pictures",
+      "id": "OHR.RedNice_JA-JP4725682184",
+      "publishedAt": "2026-11-20T15:00:00.000Z",
+      "fetchedAt": "2026-11-20T15:03:54.316Z",
+      "title": "テラコッタ色に染まる街",
+      "description": "ニース、プロヴァンス＝アルプ＝コート・ダジュール地域圏、フランス",
+      "copyright": "© Siripong Kaewla-iad/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.Megaptera_JA-JP4163269980_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%b6%e3%83%88%e3%82%a6%e3%82%af%e3%82%b8%e3%83%a9&form=hpcapt&filters=HpDate:%2220261119_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%8b%e3%83%bc%e3%82%b9+%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b9&form=hpcapt&filters=HpDate:%2220261120_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
