@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "49364603efe0322f",
+  "version": "72a65e0a63ea5599",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.RedNice_ZH-CN3518429866",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.RedNice_JA-JP4725682184",
-      "publishedAt": "2026-11-20T15:00:00.000Z",
-      "fetchedAt": "2026-11-20T15:03:54.316Z",
-      "title": "テラコッタ色に染まる街",
-      "description": "ニース、プロヴァンス＝アルプ＝コート・ダジュール地域圏、フランス",
-      "copyright": "© Siripong Kaewla-iad/Getty Images",
+      "id": "OHR.JustaHermitage_JA-JP5350379708",
+      "publishedAt": "2026-11-21T15:00:00.000Z",
+      "fetchedAt": "2026-11-21T15:03:49.977Z",
+      "title": "波間にたたずむ隠れ家",
+      "description": "サンタ・フスタ礼拝堂、カンタブリア州、スペイン",
+      "copyright": "© Tramont_ana/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.RedNice_JA-JP4725682184_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%8b%e3%83%bc%e3%82%b9+%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b9&form=hpcapt&filters=HpDate:%2220261120_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%b5%e3%83%b3%e3%82%bf%e3%83%bb%e3%83%95%e3%82%b9%e3%82%bf%e7%a4%bc%e6%8b%9d%e5%a0%82&form=hpcapt&filters=HpDate:%2220261121_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
