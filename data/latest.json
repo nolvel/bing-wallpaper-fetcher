@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "b4e5aa77935d6f36",
+  "version": "49364603efe0322f",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.RedNice_ZH-CN3518429866",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.Megaptera_EN-US1728719939",
-      "publishedAt": "2026-11-20T08:00:00.000Z",
-      "fetchedAt": "2026-11-20T08:03:47.936Z",
-      "title": "Feasting in the fjords",
-      "description": "Diving humpback whale, Kvaloya, Troms, Northern Norway",
-      "copyright": "© Espen Bergersen/Minden Pictures",
+      "id": "OHR.RedNice_EN-US9978351403",
+      "publishedAt": "2026-11-21T08:00:00.000Z",
+      "fetchedAt": "2026-11-21T08:03:46.888Z",
+      "title": "Terracotta dreams",
+      "description": "Nice, Provence-Alpes-Côte d'Azur, France",
+      "copyright": "© Siripong Kaewla-iad/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.Megaptera_EN-US1728719939_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=humpback+whales&form=hpcapt&filters=HpDate:%2220261120_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.RedNice_EN-US9978351403_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.RedNice_EN-US9978351403_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.RedNice_EN-US9978351403_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Nice+France&form=hpcapt&filters=HpDate:%2220261121_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
