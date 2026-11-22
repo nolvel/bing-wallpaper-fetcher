@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "c24e9067db4d8432",
+  "version": "747dab2e506a4336",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.JustaHermitage_ZH-CN3751022621",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.JustaHermitage_JA-JP5350379708",
-      "publishedAt": "2026-11-21T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T15:03:49.977Z",
-      "title": "波間にたたずむ隠れ家",
-      "description": "サンタ・フスタ礼拝堂、カンタブリア州、スペイン",
-      "copyright": "© Tramont_ana/Getty Images",
+      "id": "OHR.FibonacciFern_JA-JP6039925060",
+      "publishedAt": "2026-11-22T15:00:00.000Z",
+      "fetchedAt": "2026-11-22T15:03:47.259Z",
+      "title": "自然が描く幾何学模様",
+      "description": "シダの若芽",
+      "copyright": "© Reza Saputra/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.JustaHermitage_JA-JP5350379708_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%b5%e3%83%b3%e3%82%bf%e3%83%bb%e3%83%95%e3%82%b9%e3%82%bf%e7%a4%bc%e6%8b%9d%e5%a0%82&form=hpcapt&filters=HpDate:%2220261121_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%95%e3%82%a3%e3%83%9c%e3%83%8a%e3%83%83%e3%83%81%e6%95%b0%e5%88%97&form=hpcapt&filters=HpDate:%2220261122_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
