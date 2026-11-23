@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "bbc606c38f593894",
+  "version": "523c8a76285a9afd",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.FibonacciFern_ZH-CN3882237848",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.FibonacciFern_JA-JP6039925060",
-      "publishedAt": "2026-11-22T15:00:00.000Z",
-      "fetchedAt": "2026-11-22T15:03:47.259Z",
-      "title": "自然が描く幾何学模様",
-      "description": "シダの若芽",
-      "copyright": "© Reza Saputra/Getty Images",
+      "id": "OHR.CairngormsSquirrel_JA-JP8531667327",
+      "publishedAt": "2026-11-23T15:00:00.000Z",
+      "fetchedAt": "2026-11-23T15:03:59.254Z",
+      "title": "紅葉にまぎれて",
+      "description": "キタリス、ケアンゴームズ国立公園、ハイランド地方、スコットランド",
+      "copyright": "© Scotland: The Big Picture/Minden Pictures",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_JA-JP6039925060_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%95%e3%82%a3%e3%83%9c%e3%83%8a%e3%83%83%e3%83%81%e6%95%b0%e5%88%97&form=hpcapt&filters=HpDate:%2220261122_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%82%ad%e3%82%bf%e3%83%aa%e3%82%b9&form=hpcapt&filters=HpDate:%2220261123_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
