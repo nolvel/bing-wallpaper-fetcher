@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "d8ad6347e74e99d2",
+  "version": "78cd2f076b4ec918",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.CairngormsSquirrel_ZH-CN0941302869",
@@ -17,17 +17,17 @@
       "market": "zh-CN"
     },
     "en-US": {
-      "id": "OHR.FibonacciFern_EN-US6307771770",
-      "publishedAt": "2026-11-23T08:00:00.000Z",
-      "fetchedAt": "2026-11-23T08:03:46.042Z",
-      "title": "Geometry in nature",
-      "description": "Fiddlehead fern",
-      "copyright": "© Reza Saputra/Getty Images",
+      "id": "OHR.CairngormsSquirrel_EN-US7053432564",
+      "publishedAt": "2026-11-24T08:00:00.000Z",
+      "fetchedAt": "2026-11-24T08:04:00.588Z",
+      "title": "Autumnal camouflage",
+      "description": "Red squirrel in Cairngorms National Park, Highlands, Scotland",
+      "copyright": "© Scotland: The Big Picture/Minden Pictures",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_EN-US6307771770_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_EN-US6307771770_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.FibonacciFern_EN-US6307771770_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=fibonacci+day&form=hpcapt&filters=HpDate:%2220261123_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_EN-US7053432564_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_EN-US7053432564_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_EN-US7053432564_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=Eurasian+red+squirrel&form=hpcapt&filters=HpDate:%2220261124_0800%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "en-US"
     },
     "ja-JP": {
