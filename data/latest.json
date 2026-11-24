@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "78cd2f076b4ec918",
+  "version": "9909354979b18263",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.CairngormsSquirrel_ZH-CN0941302869",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.CairngormsSquirrel_JA-JP8531667327",
-      "publishedAt": "2026-11-23T15:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:03:59.254Z",
-      "title": "紅葉にまぎれて",
-      "description": "キタリス、ケアンゴームズ国立公園、ハイランド地方、スコットランド",
-      "copyright": "© Scotland: The Big Picture/Minden Pictures",
+      "id": "OHR.SunsetPoint_JA-JP7278727628",
+      "publishedAt": "2026-11-24T15:00:00.000Z",
+      "fetchedAt": "2026-11-24T15:04:01.928Z",
+      "title": "赤い奇岩の雪化粧",
+      "description": "サンセット・ポイント、ブライスキャニオン国立公園、ユタ州",
+      "copyright": "© Colin D. Young/Alamy",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.CairngormsSquirrel_JA-JP8531667327_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%82%ad%e3%82%bf%e3%83%aa%e3%82%b9&form=hpcapt&filters=HpDate:%2220261123_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.SunsetPoint_JA-JP7278727628_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.SunsetPoint_JA-JP7278727628_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.SunsetPoint_JA-JP7278727628_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%96%e3%83%a9%e3%82%a4%e3%82%b9%e3%82%ad%e3%83%a3%e3%83%8b%e3%82%aa%e3%83%b3%e5%9b%bd%e7%ab%8b%e5%85%ac%e5%9c%92&form=hpcapt&filters=HpDate:%2220261124_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
