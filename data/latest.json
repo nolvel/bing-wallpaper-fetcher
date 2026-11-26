@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "27663d301ed2f735",
+  "version": "768868404782389c",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.RFHilo_ZH-CN5962114314",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.RFHilo_JA-JP7653681991",
-      "publishedAt": "2026-11-25T15:00:00.000Z",
-      "fetchedAt": "2026-11-25T15:03:48.407Z",
-      "title": "虹が舞い降りる滝",
-      "description": "ワイルク川のレインボー・フォールズ、ヒロ、ハワイ州、アメリカ",
-      "copyright": "© Peter Unger/Getty Images",
+      "id": "OHR.FaceCanyon_JA-JP4501981808",
+      "publishedAt": "2026-11-26T15:00:00.000Z",
+      "fetchedAt": "2026-11-26T15:04:00.183Z",
+      "title": "灰色と黄金色が織りなす風景",
+      "description": "夕暮れの岩山、フェイス・キャニオン、パウエル湖、ユタ州、アメリカ",
+      "copyright": "© Jeff Foott/Minden",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.RFHilo_JA-JP7653681991_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.RFHilo_JA-JP7653681991_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.RFHilo_JA-JP7653681991_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%ac%e3%82%a4%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%bb%e3%83%95%e3%82%a9%e3%83%bc%e3%83%ab%e3%82%ba+%e3%83%af%e3%82%a4%e3%83%ab%e3%82%af%e5%b7%9d+%e3%83%8f%e3%83%af%e3%82%a4&form=hpcapt&filters=HpDate:%2220261125_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%91%e3%82%a6%e3%82%a8%e3%83%ab%e6%b9%96&form=hpcapt&filters=HpDate:%2220261126_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
