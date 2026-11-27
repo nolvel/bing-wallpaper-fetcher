@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "779437833a386087",
+  "version": "092e21b698f3eb80",
   "wallpapers": {
     "zh-CN": {
       "id": "OHR.FaceCanyon_ZH-CN9505064248",
@@ -31,17 +31,17 @@
       "market": "en-US"
     },
     "ja-JP": {
-      "id": "OHR.FaceCanyon_JA-JP4501981808",
-      "publishedAt": "2026-11-26T15:00:00.000Z",
-      "fetchedAt": "2026-11-26T15:04:00.183Z",
-      "title": "灰色と黄金色が織りなす風景",
-      "description": "夕暮れの岩山、フェイス・キャニオン、パウエル湖、ユタ州、アメリカ",
-      "copyright": "© Jeff Foott/Minden",
+      "id": "OHR.VltavaPrague_JA-JP5027997170",
+      "publishedAt": "2026-11-27T15:00:00.000Z",
+      "fetchedAt": "2026-11-27T15:03:49.917Z",
+      "title": "歴史をつなぐ橋",
+      "description": "旧市街とヴルタヴァ川、プラハ、チェコ",
+      "copyright": "© Lara_Uhryn/Getty Images",
       "source": "Bing",
-      "previewUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_640x360.jpg",
-      "fullHdUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_1920x1080.jpg",
-      "uhdUrl": "https://www.bing.com/th?id=OHR.FaceCanyon_JA-JP4501981808_UHD.jpg",
-      "linkUrl": "https://www.bing.com/search?q=%e3%83%91%e3%82%a6%e3%82%a8%e3%83%ab%e6%b9%96&form=hpcapt&filters=HpDate:%2220261126_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
+      "previewUrl": "https://www.bing.com/th?id=OHR.VltavaPrague_JA-JP5027997170_640x360.jpg",
+      "fullHdUrl": "https://www.bing.com/th?id=OHR.VltavaPrague_JA-JP5027997170_1920x1080.jpg",
+      "uhdUrl": "https://www.bing.com/th?id=OHR.VltavaPrague_JA-JP5027997170_UHD.jpg",
+      "linkUrl": "https://www.bing.com/search?q=%e3%83%97%e3%83%a9%e3%83%8f+%e6%a9%8b&form=hpcapt&filters=HpDate:%2220261127_1500%22+mgzv3configlist:%22BingQA_Encyclopedia_Layout%22",
       "market": "ja-JP"
     },
     "it-IT": {
